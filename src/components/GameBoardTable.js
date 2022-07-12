@@ -1,6 +1,6 @@
 import React from "react";
 
-//import "./GameBoardTable.css";
+import "./GameBoardTable.css";
 
 // Component that invokes a WorkorderListItem child for each workorder in the data set
 export default function GameBoardTable(props) {
@@ -24,7 +24,7 @@ export default function GameBoardTable(props) {
   const board = emptyBoard().map((item, i) => {
     const entry = item.map(function (element, j) {
           return ( 
-              <td key={j}> {element} </td>
+              <td className = "gameboard-table-tile" key={j}> {} </td>
               );
       });
       return (
@@ -33,8 +33,8 @@ export default function GameBoardTable(props) {
   });
 
     return (
-    <div className="gameboard-container-table">
-        <table>
+    <div>
+        <table className="gameboard-container-table">
           <tbody>
             {board}
           </tbody>

@@ -1,0 +1,12 @@
+.gameboard-container-table {
+  min-width: 500px;
+  max-width: 45%;
+  margin: 20px;
+  height: 25rem;  
+  outline: 2px solid;  
+  background-color: lightGrey;
+}
+
+.gameboard-table-tile {
+  border: 1px solid;  
+}
