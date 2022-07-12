@@ -11,7 +11,6 @@ export default function GameBoard(props) {
     for(let i = 0; i < len ; i++) {
       boardTiles[i] = "empty"
     }
-    console.log("tiles", boardTiles)
     return boardTiles;
   }
 

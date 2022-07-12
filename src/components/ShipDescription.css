@@ -1,0 +1,14 @@
+.left-nav-item {
+
+}
+
+.ship-table {
+  background: lightgray;
+  outline: 2px solid;
+}
+
+.ship-tiles {
+  border: 1px solid;
+  height: 20px;
+  width: 20px;
+}

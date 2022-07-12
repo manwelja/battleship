@@ -17,7 +17,6 @@ export default function GameBoardTable(props) {
       boardTiles.push(boardRow);
       boardRow = [];
     }
-    console.log("tiles", boardTiles)
     return boardTiles;
   }
 
