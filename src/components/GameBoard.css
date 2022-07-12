@@ -1,0 +1,16 @@
+.gameboard-container {
+  display: flex;
+  flex-flow: row wrap;
+  min-width: 500px;
+  max-width: 45%;
+  margin: 20px;
+  height: 25rem;  
+  outline: 2px solid;  
+}
+
+.gameboard-tile {
+  display: flex;
+  flex: 1 0 9%; 
+  border: 1px solid;
+  background-color: lightGrey;
+}

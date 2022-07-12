@@ -1,18 +1,31 @@
 import React from "react";
-import GameBoardTile from "./GameBoardTile";
+import "./GameBoard.css";
 
 // Component that invokes a WorkorderListItem child for each workorder in the data set
 export default function GameBoard(props) {
-  const { boardTiles, numTiles } = props;
+  const boardWidth = 10;
+  const boardHeight = 10;
 
-  const board = boardTiles.map((tile) => {
+  const emptyBoard = (len = boardHeight * boardWidth) =>  {
+    const boardTiles = [];
+    for(let i = 0; i < len ; i++) {
+      boardTiles[i] = "empty"
+    }
+    console.log("tiles", boardTiles)
+    return boardTiles;
+  }
+
+  const board = emptyBoard().map((tile, idx) => {
     return (
-      <GameBoardTile class=""
-      />);
+      <div className="gameboard-tile"> </div>
+      );
   });
 
   return (
-    <div class="gameboard-container"> {board} </div>
+    <>
+      <div className="gameboard-container"> {board} </div>
+      <div className="gameboard-container"> {board} </div>
+    </>
   );
 
 };
