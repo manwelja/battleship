@@ -10,3 +10,7 @@
 .gameboard-table-tile {
   border: 1px solid;  
 }
+
+.player-name {
+  padding-left: 15px;
+}
