@@ -1,5 +1,5 @@
 import "./ShipDescription.css";
-import { ItemTypes } from '../Constants'
+import { ItemTypes } from '../constants'
 import { useDrag } from 'react-dnd'
 
 // Component that invokes a WorkorderListItem child for each workorder in the data set
@@ -19,12 +19,12 @@ export default function ShipDescription(props) {
     for(let i = 0; i < length; i++) {
       shipArray.push(i)
     }    
-    return (shipArray.map((idx) => <td className="ship-tiles"> </td>))
+    return (shipArray.map((idx) => <div className="ship-tiles"> </div>))
   }
 
 console.log("ship", shipTiles())
   return (
-    <div className="left-nav-item"> {name}: <table className="ship-table"><tbody><tr ref={drag}>{shipTiles()}</tr></tbody></table></div>    
+    <div>{name}: <div className="ship-container" ref={drag}>{shipTiles()}</div></div>    
   );
 
 };

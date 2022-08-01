@@ -1,5 +1,5 @@
 import React from "react";
-import { ItemTypes } from '../Constants'
+import { ItemTypes } from '../constants'
 import { useDrop } from 'react-dnd'
 import "./GameBoardTable.css";
 
@@ -7,8 +7,8 @@ import "./GameBoardTable.css";
 export default function GameBoardTable(props) {
   const boardWidth = 10;
   const boardHeight = 10;
-  function addToBoard(itemType) {
-    console.log("add", itemType)
+  function addToBoard() {
+    //console.log("add", itemType)
   }
 
   const [{ isOver, canDrop }, drop] = useDrop(

@@ -22,8 +22,7 @@ export default function GameBoard(props) {
 
   return (
     <>
-      <div className="gameboard-container"> {board} </div>
-      <div className="gameboard-container"> {board} </div>
+      <div className="gameboard-container"> {board} </div>    
     </>
   );
 

@@ -1,14 +1,36 @@
 .left-nav-item {
-
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  align-items: stretch;
+  margin-bottom: 15px;
 }
 
-.ship-table {
-  background: green;
-  outline: 2px solid;
+.ship-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
 }
 
 .ship-tiles {
   border: 1px solid;
   height: 20px;
   width: 20px;
+  outline: 2px solid;
+}
+
+.green {
+  background: green;
+}
+.red {
+  background: red;
+}
+.blue {
+  background: blue;
+}
+.purple {
+  background: purple;
+}
+.yellow {
+  background: yellow;
 }
