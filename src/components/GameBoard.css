@@ -8,7 +8,7 @@
   outline: 2px solid;  
 }
 
-.gameboard-tile {
+.gameboard-square {
   display: flex;
   flex: 1 0 9%; 
   border: 1px solid;
