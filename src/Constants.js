@@ -1,5 +1,9 @@
 export const ItemTypes = {
-  BATTLESHIP: 'battleship'
+  BATTLESHIP: 'battleship',
+  CARRIER: 'carrier',
+  CRUISER: 'cruiser',
+  SUBMARINE: 'submarine',
+  DESTROYER: 'destroyer'
 }
 
 export const ALL_SHIPS = [

@@ -14,3 +14,6 @@
   border: 1px solid;
   background-color: lightGrey;
 }
+.board-square {
+  width: 100%
+}

@@ -16,23 +16,31 @@ export default function ShipDescription(props) {
     " beige": color === "beige"
  }); 
 
-  const [{isDragging}, drag] = useDrag(() => ({
-    type: ItemTypes.BATTLESHIP,
+  const [{type, isDragging}, drag] = useDrag(() => ({
+    type: props.name,
+    item: {shipType:props.name},
     collect: monitor => ({
       isDragging: !!monitor.isDragging(),
-    }),
-  }))
+      type: props.name
+    }),   
+  }), )
 
   const shipTiles = () => {
     const shipArray = [];
     for(let i = 0; i < length; i++) {
       shipArray.push(i)
     }    
-    return (shipArray.map((idx) => <div className={shipTilesClass}> </div>))
+    return (shipArray.map((idx) => <div id={idx} className={shipTilesClass}> </div>))
   }
 
   return (
-    <div>{name}: <div className="ship-container" ref={drag}>{shipTiles()}</div></div>    
+    <div>{name}:
+         <div 
+            className="ship-container" 
+            ref={drag}>
+            {shipTiles()}
+         </div>
+    </div>    
   );
 
 };
