@@ -11,30 +11,52 @@ export const ALL_SHIPS = [
     name: 'carrier',
     length: 5,
     color: 'green',
-    placed: null,
+    placed: false,
+    location: {
+                squares: [],
+                direction: null
+              }
   },
   {
     name: 'battleship',
     length: 4,
     color: 'blue',
-    placed: null,
+    placed: false,
+    location: {
+      squares: [],
+      direction: null
+    }
   },
   {
     name: 'cruiser',
     length: 3,
     color: 'yellow',
-    placed: null,
+    placed: false,
+    location: {
+      squares: [],
+      direction: null
+    }
   },
   {
     name: 'submarine',
     length: 3,
     color: 'purple',
-    placed: null,
+    placed: false,
+    location: {
+      squares: [],
+      direction: null
+    }
   },
   {
     name: 'destroyer',
     length: 2,
     color: 'beige',
-    placed: null,
+    placed: false,
+    location: {
+      squares: [],
+      direction: null
+    }
   },
 ];
+
+export const SQUARE_COLORS = [];
