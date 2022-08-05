@@ -17,3 +17,22 @@
 .board-square {
   width: 100%
 }
+
+.green {
+  background: green;
+}
+.blue {
+  background: blue;
+}
+.purple {
+  background: purple;
+}
+.yellow {
+  background: yellow;
+}
+.beige {
+  background: beige;
+}
+.hit {
+  background: red;
+}
