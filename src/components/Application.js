@@ -3,12 +3,17 @@ import "./Application.css";
 import GameBoardUser from "./GameBoardUser";
 import GameBoardComputer from "./GameBoardComputer";
 import ShipDescription from "./ShipDescription";
-import { ItemTypes, ALL_SHIPS } from '../constants'
+import { ItemTypes, ALL_SHIPS, USER_SQUARE_COLORS, COMPUTER_SQUARE_COLORS} from '../constants'
 import { useDrop } from 'react-dnd'
 import { DndProvider } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 
 export default function Application() {
+
+  const [state, setState] = useState({
+    userSquareColors: USER_SQUARE_COLORS,
+    computerSquareColors: COMPUTER_SQUARE_COLORS
+  });
 
   const navShips = ALL_SHIPS.map((ship) => {
     return (
@@ -23,7 +28,7 @@ export default function Application() {
           <div className="left-nav-container">
              {navShips}
           </div>
-          <div className="content-container"><GameBoardUser player="you" /> <GameBoardComputer player="computer" /></div>
+          <div className="content-container"><GameBoardUser player="you" state={state} setState={setState}/> <GameBoardComputer player="computer"  state={state} setState={setState}/></div>
           <div className="footer-container">footer</div>
       </main>
     </DndProvider>

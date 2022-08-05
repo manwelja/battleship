@@ -8,13 +8,7 @@ import { useDrop } from 'react-dnd'
 // Component that invokes a WorkorderListItem child for each workorder in the data set
 export default function GameBoardUser(props) {
   const numSquares = 100;
-
-
- // const [squareColors, setSquareColors] = useState([USER_SQUARE_COLORS]);
- const [state, setState] = useState({
-  userSquareColors: USER_SQUARE_COLORS,
-  computerSquareColors: COMPUTER_SQUARE_COLORS
- });
+  const {state, setState} = props;
 
   function handleSquareClick(x, y) {
      console.log(x, y);

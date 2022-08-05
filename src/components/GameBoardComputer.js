@@ -9,12 +9,7 @@ import { useDrop } from 'react-dnd'
 export default function GameBoardComputer(props) {
   const numSquares = 100;
 
-
- // const [squareColors, setSquareColors] = useState([USER_SQUARE_COLORS]);
- const [state, setState] = useState({
-  userSquareColors: USER_SQUARE_COLORS,
-  computerSquareColors: COMPUTER_SQUARE_COLORS
- });
+  const {state, setState} = props;
 
   function handleSquareClick(x, y) {
      console.log(x, y);
