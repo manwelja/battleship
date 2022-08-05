@@ -25,8 +25,8 @@ export default function BoardSquare(props) {
 
   return (
      <div    
-        ref={drop}
-        className="board-square"
+        ref={drop}  
+        className="board-square"    
         key={"tile-" + props.x + props.y}
         x={props.x}
         y={props.y}                          

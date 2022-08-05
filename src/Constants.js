@@ -59,4 +59,4 @@ export const ALL_SHIPS = [
   },
 ];
 
-export const SQUARE_COLORS = [];
+export const USER_SQUARE_COLORS = [];
