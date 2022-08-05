@@ -1,7 +1,7 @@
 import { React, useState, useEffect, Fragment } from "react";
 import "./Application.css";
-import GameBoard from "./GameBoard";
-import GameBoardTable from "./GameBoardTable";
+import GameBoardUser from "./GameBoardUser";
+import GameBoardComputer from "./GameBoardComputer";
 import ShipDescription from "./ShipDescription";
 import { ItemTypes, ALL_SHIPS } from '../constants'
 import { useDrop } from 'react-dnd'
@@ -23,7 +23,7 @@ export default function Application() {
           <div className="left-nav-container">
              {navShips}
           </div>
-          <div className="content-container"><GameBoard player="you" /> <GameBoard player="computer" /></div>
+          <div className="content-container"><GameBoardUser player="you" /> <GameBoardComputer player="computer" /></div>
           <div className="footer-container">footer</div>
       </main>
     </DndProvider>
@@ -31,10 +31,3 @@ export default function Application() {
   );
 
   }
-
-
-  /* <div className="left-nav-item"><ShipDescription name={ALL_SHIPS[0].name} length={ALL_SHIPS[0].length} color={ALL_SHIPS[0].color} /></div>
-            <div className="left-nav-item"><ShipDescription name="Battleship" length="4" color="blue"/></div>
-            <div className="left-nav-item"><ShipDescription name="Destroyer" length="3" /></div>
-            <div className="left-nav-item"><ShipDescription name="Submarine" length="3" /></div>
-            <div className="left-nav-item"><ShipDescription name="Patrol" length="2" /></div>*/

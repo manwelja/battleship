@@ -59,4 +59,10 @@ export const ALL_SHIPS = [
   },
 ];
 
-export const USER_SQUARE_COLORS = [];
+const USER_SQUARE_COLORS = [];
+USER_SQUARE_COLORS.length = 100;
+export {USER_SQUARE_COLORS};
+
+const COMPUTER_SQUARE_COLORS = [];
+COMPUTER_SQUARE_COLORS.length = 100;
+export {COMPUTER_SQUARE_COLORS};
